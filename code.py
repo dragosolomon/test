@@ -1,6 +1,6 @@
 from urllib.request import urlopen
 
-story = urlopen("hhtp://sixty-north.com/c/t.txt")
+story = urlopen("http://sixty-north.com/c/t.txt")
 words = []
 for line in story:
     line_words = line.decode('utf8').split()
@@ -8,3 +8,5 @@ for line in story:
         words.append(word)
 
 story.close()
+for word in words:
+    print(word)
