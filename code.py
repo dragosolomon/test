@@ -13,3 +13,5 @@ def fetch_words():
 
     for word in words:
         print(word)
+
+print(__name__)
